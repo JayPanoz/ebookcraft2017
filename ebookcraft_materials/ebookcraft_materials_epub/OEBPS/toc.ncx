@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta content="9F217767-0B14-400A-84B9-A94ADD47E406" name="dtb:uid"/>
+    <meta content="1" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>ebookcraft demos</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint1">
+      <navLabel>
+        <text>The almighty drop cap</text>
+      </navLabel>
+      <content src="Text/001_drop-cap.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint2">
+      <navLabel>
+        <text>Open Type Features</text>
+      </navLabel>
+      <content src="Text/002_otf.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint3">
+      <navLabel>
+        <text>Shape outside</text>
+      </navLabel>
+      <content src="Text/003_shape.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint4">
+      <navLabel>
+        <text>Float an image full-width</text>
+      </navLabel>
+      <content src="Text/005_unfloat.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint5">
+      <navLabel>
+        <text>Flexland</text>
+      </navLabel>
+      <content src="Text/006_vertical-align.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint6">
+      <navLabel>
+        <text>Flex automagic grid</text>
+      </navLabel>
+      <content src="Text/007_flex-grid.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint7">
+      <navLabel>
+        <text>Flex flex baby</text>
+      </navLabel>
+      <content src="Text/008_toggle-caption.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint8">
+      <navLabel>
+        <text>Focus mode</text>
+      </navLabel>
+      <content src="Text/009_focus-mode.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint9">
+      <navLabel>
+        <text>Loomings</text>
+      </navLabel>
+      <content src="Text/010_speech.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint10">
+      <navLabel>
+        <text>Meet a11y.css</text>
+      </navLabel>
+      <content src="Text/011_alix.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint11">
+      <navLabel>
+        <text>Previewer</text>
+      </navLabel>
+      <content src="Text/012_previewer.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint12">
+      <navLabel>
+        <text>Console</text>
+      </navLabel>
+      <content src="Text/013_console.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

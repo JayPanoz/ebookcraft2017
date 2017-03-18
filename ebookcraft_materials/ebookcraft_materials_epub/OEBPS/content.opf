@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package prefix="rendition: http://www.idpf.org/vocab/rendition/#" unique-identifier="BookId" version="3.0" xmlns="http://www.idpf.org/2007/opf">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:identifier id="BookId">9F217767-0B14-400A-84B9-A94ADD47E406</dc:identifier>
+    <dc:title id="t1">ebookcraft demos</dc:title>
+    <dc:creator id="create1">Friends of EPUB</dc:creator>
+    <meta property="role" refines="#create1" scheme="marc:relators">aut</meta>
+    <dc:language>en</dc:language>
+    <meta property="dcterms:modified">2017-03-18T11:29:45Z</meta>
+    <meta name="cover" content="eBookCatft-cover.jpg"/>
+    <meta content="0.9.5" name="Sigil version"/>
+  </metadata>
+  <manifest>
+    <item href="Text/006_vertical-align.xhtml" id="x006_vertical-align.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/003_shape.xhtml" id="x003_shape.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Styles/Styles.css" id="Styles.css" media-type="text/css"/>
+    <item href="Images/asterism.svg" id="asterism.svg" media-type="image/svg+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="Text/nav.xhtml" id="navid" media-type="application/xhtml+xml" properties="nav"/>
+    <item href="Styles/enhancements.css" id="enhancements.css" media-type="text/css"/>
+    <item href="Images/Ink1.png" id="Ink1.png" media-type="image/png"/>
+    <item href="Images/item1.png" id="item1.png" media-type="image/png"/>
+    <item href="Images/item2.png" id="item2.png" media-type="image/png"/>
+    <item href="Images/item3.png" id="item3.png" media-type="image/png"/>
+    <item href="Text/001_drop-cap.xhtml" id="x001_drop-cap.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/002_otf.xhtml" id="x002_otf.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/008_toggle-caption.xhtml" id="x008_toggle-caption.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/portrait.png" id="portrait.png" media-type="image/png"/>
+    <item href="Text/000_svg.xhtml" id="x000_svg.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="Text/007_flex-grid.xhtml" id="x007_flex-grid.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Misc/switchMark.js" id="switchMark.js" media-type="text/javascript"/>
+    <item href="Text/009_focus-mode.xhtml" id="x009_focus-mode.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item href="Text/013_console.xhtml" id="x013_console.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item href="Fonts/SourceSansPro-Bold.otf" id="SourceSansPro-Bold.otf" media-type="application/vnd.ms-opentype"/>
+    <item href="Fonts/SourceSansPro-It.otf" id="SourceSansPro-It.otf" media-type="application/vnd.ms-opentype"/>
+    <item href="Fonts/SourceSansPro-Regular.otf" id="SourceSansPro-Regular.otf" media-type="application/vnd.ms-opentype"/>
+    <item href="Fonts/SourceSerifPro-Light.otf" id="SourceSerifPro-Light.otf" media-type="application/vnd.ms-opentype"/>
+    <item href="Fonts/SourceSerifPro-Regular.otf" id="SourceSerifPro-Regular.otf" media-type="application/vnd.ms-opentype"/>
+    <item href="Fonts/SourceSerifPro-Semibold.otf" id="SourceSerifPro-Semibold.otf" media-type="application/vnd.ms-opentype"/>
+    <item href="Fonts/SourceSerifPro-Bold.otf" id="SourceSerifPro-Bold.otf" media-type="application/vnd.ms-opentype"/>
+    <item href="Images/eBookCatft-cover.jpg" id="eBookCatft-cover.jpg" media-type="image/jpeg"/>
+    <item href="Styles/a11y-en.css" id="a11y-en.css" media-type="text/css"/>
+    <item href="Styles/previewer.css" id="previewer.css" media-type="text/css"/>
+    <item href="Images/cookiemonster.jpg" id="cookiemonster.jpg" media-type="image/jpeg"/>
+    <item href="Text/010_speech.xhtml" id="x010_speech.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item href="Text/004_portrait.xhtml" id="x004_portrait.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/005_unfloat.xhtml" id="x005_unfloat.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/011_alix.xhtml" id="x011_alix.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/012_previewer.xhtml" id="x012_previewer.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Misc/eBookDys.js" id="eBookDys.js" media-type="text/javascript"/>
+    <item href="Styles/eBookDys.css" id="eBookDys.css" media-type="text/css"/>
+    <item href="Misc/console.js" id="console.js" media-type="text/javascript"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="x000_svg.xhtml"/>
+    <itemref idref="navid"/>
+    <itemref idref="x001_drop-cap.xhtml"/>
+    <itemref idref="x002_otf.xhtml"/>
+    <itemref idref="x003_shape.xhtml"/>
+    <itemref idref="x004_portrait.xhtml"/>
+    <itemref idref="x005_unfloat.xhtml"/>
+    <itemref idref="x006_vertical-align.xhtml"/>
+    <itemref idref="x007_flex-grid.xhtml"/>
+    <itemref idref="x008_toggle-caption.xhtml"/>
+    <itemref idref="x009_focus-mode.xhtml"/>
+    <itemref idref="x010_speech.xhtml"/>
+    <itemref idref="x011_alix.xhtml"/>
+    <itemref idref="x012_previewer.xhtml"/>
+    <itemref idref="x013_console.xhtml"/>
+  </spine>
+  <guide>
+    <reference href="Text/000_svg.xhtml" title="Text" type="text"/>
+  </guide>
+</package>

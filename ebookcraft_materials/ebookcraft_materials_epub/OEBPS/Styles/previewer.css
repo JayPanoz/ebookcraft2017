@@ -1,0 +1,42 @@
+html.iBooksPreviewer-iPadLandscape {
+  box-sizing: border-box;
+  width: 1024px;
+  height: 768px;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  -webkit-column-width: 0;
+  -webkit-column-gap: 0;
+  column-width: 0;
+  column-gap: 0;
+  column-fill: auto;
+}
+
+.iBooksPreviewer-iPadLandscape > body {
+  margin: 0 !important;
+}
+
+.iBooksPreviewer-day {
+
+}
+
+.iBooksPreviewer-sepia {
+
+}
+
+.iBooksPreviewer-gray {
+
+}
+
+.iBooksPreviewer-night {
+
+}
+
+.iBooksPreviewer-gray a,
+.iBooksPreviewer-night a {
+
+}
+
+.iBooksPreviewer-baselineHelper {
+
+}

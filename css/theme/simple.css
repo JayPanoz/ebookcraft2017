@@ -1,0 +1,530 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+ @font-face {
+  font-family: 'belligerent_madnessregular';
+  src: url('../../lib/font/belligerent.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'henny_pennyregular';
+  src: url('../../lib/font/hennypenny-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: #fefefe;
+  background-color: #fefefe; }
+
+.reveal {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 46px;
+  font-weight: normal;
+  color: #000; }
+
+::selection {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.99);
+  text-shadow: none; }
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+  line-height: 1.4;
+  font-weight: inherit; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #000;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word; }
+
+.reveal h1 {
+  font-size: 80px;
+  font-weight: 700; }
+
+.reveal h2 {
+  font-size: 65px;
+  font-weight: 800; }
+
+.reveal h3 {
+  font-size: 55px;
+  font-weight: 700; 
+}
+
+.reveal h4 {
+  font-size: 46px;
+  font-weight: 600;
+	padding: 10px 30px;
+	display: table;
+	margin: 0 auto;
+  border-top: 2px solid #BABABA;
+  border-bottom: 2px solid #BABABA;
+}
+
+.reveal h5 {
+  font-size: 40px;
+  font-weight: 600;
+  background-color: #000;
+  color: #FEFEFE;
+	padding: 10px 30px;
+	display: table;
+	margin: 0 auto;
+}
+
+.reveal h1 {
+  text-shadow: none; }
+
+/*********************************************
+ * OTHER
+ *********************************************/
+.reveal p {
+  margin: 20px 0;
+  line-height: 1.4; }
+
+/* Ensure certain elements are never larger than the slide itself */
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%; }
+
+.reveal strong,
+.reveal b {
+  font-weight: bold; }
+
+.reveal em,
+.reveal i {
+  font-style: italic; }
+  
+.reveal i[lang="en"],
+.reveal cite[lang="en"] {
+  font-style: normal;
+}
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em; }
+  
+.reveal ul {
+	margin: 0;
+}
+
+.reveal ol {
+  list-style-type: decimal; }
+
+.reveal ul {
+  list-style-type: none; }
+
+.reveal ul ul {
+  list-style-type: square; }
+
+.reveal ul ul ul {
+  list-style-type: circle; }
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px; }
+
+.reveal q,
+.reveal blockquote {
+  quotes: none; }
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block; }
+
+.reveal q {
+  font-style: italic; }
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: "Andale Mono", Menlo, Consolas, monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+}
+
+.reveal code {
+  font-family: "Andale Mono", Menlo, Consolas, monospace; }
+
+.reveal pre code {
+  display: block;
+  padding: 20px;
+  overflow: auto;
+  max-height: auto;
+  word-wrap: break-word;
+  white-space: pre-wrap;  }
+
+.reveal sup {
+  vertical-align: super; }
+
+.reveal sub {
+  vertical-align: sub; }
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: baseline; }
+
+.reveal small * {
+  vertical-align: baseline; }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  color: #0000FE;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:hover {
+  color: #551A8B;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #00003f; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+
+.reveal section img {
+  margin: 0px;
+  border: 0;
+  box-shadow: none; }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+  border-right-color: #42affa; }
+
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+  border-left-color: #42affa; }
+
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+  border-bottom-color: #42affa; }
+
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+  border-top-color: #42affa; }
+
+.reveal .controls .navigate-left.enabled:hover {
+  border-right-color: #8dcffc; }
+
+.reveal .controls .navigate-right.enabled:hover {
+  border-left-color: #8dcffc; }
+
+.reveal .controls .navigate-up.enabled:hover {
+  border-bottom-color: #8dcffc; }
+
+.reveal .controls .navigate-down.enabled:hover {
+  border-top-color: #8dcffc; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #42affa;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+  
+/*********************************************
+ * CUSTOM STYLES (PANOZ)
+ *********************************************/
+ 
+.reveal .huge {
+  font-size: 250px;  
+  font-weight: bold;
+}
+
+.reveal .jumbo {
+  font-size: 150px;  
+}
+
+.reveal .bigger {
+  font-size: 56px;  
+  font-weight: bold;
+}
+
+.reveal ul {
+  list-style-type: circle;
+}
+
+.reveal ol {
+  list-style-type: decimal;
+}
+
+.reveal .smaller-list {
+  font-size: 0.75em;
+  line-height: 1.2em;
+  vertical-align: baseline;
+}
+
+.reveal .spec-list {
+  list-style: none !important;
+}
+
+.reveal .spec-list li {
+  margin: 20px 0;
+}
+
+.reveal .mt-l {
+  margin-top: 80px;
+}
+
+.reveal .mt-xl {
+  margin-top: 120px;
+}
+
+.reveal .mb-l {
+  margin-bottom: 80px;
+}
+
+.reveal .mb-xl {
+  margin-bottom: 120px;
+}
+
+.reveal .shadowed {
+  color: #999;
+}
+
+.reveal figure {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.reveal video,
+.reveal figure img {
+	max-height: 700px;
+	width: auto;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.reveal figcaption {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+
+.reveal blockquote:before {
+  font-family: Palatino, Georgia, serif;
+	content: "“";
+	display: block;
+	position: absolute;
+	color: #DADADA;
+	font-size: 200%;
+	top: -40px;
+	left: -45px;
+}
+
+.reveal blockquote:after {
+  font-family: Palatino, Georgia, serif;
+	content: "„";
+	display: block;
+	position: absolute;
+	color: #DADADA;
+	font-size: 200%;
+	bottom: -45px;
+	right: -40px;
+}
+  
+.reveal blockquote cite {
+	display: block;
+	font-style: normal;
+	font-size: 81.25%;
+	font-weight: 500;
+	color: #999;
+	margin-top: 25px;
+}
+
+.reveal .left {
+  display: inline-block;
+  text-align: left;
+}
+
+.reveal .col {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+}
+
+.reveal .inverted {
+  color: #FFF;
+  font-weight: 700;
+  text-shadow: 0 0 8px black;
+}
+
+.reveal .inverted-flat {
+  color: #FFF;
+  font-weight: 600;
+}
+
+.reveal .desc {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.reveal .desc > * {
+	all: initial;
+}
+
+.reveal .flex {
+	display: -webkit-flex;
+	display: flex;
+	margin: 0;
+}
+
+.reveal .flex.item33 {
+	-webkit-flex-basis: -webkit-calc(100% / 3);
+	flex-basis: calc(100% / 3);
+	list-style: none;
+	text-align: center;
+}
+
+.reveal .flex.space-ad {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.reveal .flex.item50 {
+	-webkit-flex-basis: -webkit-calc(100% / 2);
+	flex-basis: calc(100% / 2);
+	list-style: none;
+	text-align: center;
+}
+
+.reveal .flex img {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.reveal .flex.mh > li {
+	margin: 0 10px;
+}
+
+.reveal .hostile {
+  font-family: "belligerent_madnessregular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: normal;
+}
+
+.reveal .story {
+  font-family: "henny_pennyregular", fantasy;
+  font-weight: normal;
+}
+
+.reveal table {
+  width: 100%;
+  font-size: 36px;
+  border-collapse: separate;
+  border: 0;
+  empty-cells: show;
+  overflow-x: auto;
+}
+
+.reveal table caption {
+  font-size: 32px;
+  text-align: right;
+  font-weight: 500;
+  padding: 30px 0 0 0;
+  margin: 0;
+  caption-side: bottom;
+  border-top: 1px solid currentColor;
+}
+
+.reveal table th {
+  font-weight: 600;
+  text-align: right;
+  padding: 10px;
+  border-bottom: 2px solid currentColor;
+}
+
+.reveal td {
+  text-align: right;
+  padding: 10px;
+}
+
+.reveal tr:not(:last-child) td {
+  border-bottom: 1px solid currentColor;
+}
+
+.reveal table th:first-child,
+.reveal table td:first-child {
+  font-weight: 600;
+  text-align: left;
+}
+
+.reveal .tweeta {
+  display: block;
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}

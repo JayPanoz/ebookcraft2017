@@ -1,0 +1,428 @@
+@charset "UTF-8";
+
+/*  blitz — CSS framework for reflowable eBooks      
+    Version 1 by Jiminy Panoz                      
+    Codename: Rock the Casbah                              
+    License: MIT (https://opensource.org/licenses/MIT)   */
+    
+/* NAMESPACES */
+
+@namespace h "http://www.w3.org/1999/xhtml/";
+@namespace epub "http://www.idpf.org/2007/ops";
+
+html {
+  /* */
+}
+
+/* FONTS IMPORT */
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url('../Fonts/SourceSansPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url('../Fonts/SourceSansPro-It.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url('../Fonts/SourceSansPro-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSerifPro";
+    src: url('../Fonts/SourceSerifPro-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSerifPro";
+    src: url('../Fonts/SourceSerifPro-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSerifPro";
+    src: url('../Fonts/SourceSerifPro-Semibold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSerifPro";
+    src: url('../Fonts/SourceSerifPro-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* RESET */
+
+article, address, aside, blockquote, canvas, dd, details, div, dl, dt, figure, figcaption, footer, h1, h2, h3, h4, h5, h6, header, hr, li, main, nav, ol, p, pre, section, summary, ul {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: inherit;
+  text-indent: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+article, aside, figure, figcaption, footer, header, main, nav, section {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, dt, pre {
+  text-align: left;
+}
+
+nav[epub|type~="toc"] ol {
+  list-style: none !important;
+}
+
+nav[epub|type~="landmarks"],
+nav[epub|type~="page-list"] {
+  display: none;
+}
+
+a, abbr, b, bdi, bdo, cite, code, data, del, dfn, em, i, ins, kbd, mark, q, rp, rt, rtc, ruby, s, samp, small, span, strong, sub, sup, time, var {
+  font-size: inherit;
+  vertical-align: baseline;
+  font-style: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+q {
+  quotes: none;
+}
+
+body > :last-child,
+body > section > :last-child {
+  margin-bottom: 0;
+}
+
+/* LAYOUT */
+
+@page {
+  padding: 0;
+  margin: 1% 1% 2%;
+}
+
+body {
+  margin: 0 16px;
+  padding: 0;
+  font-size: 100%;
+  font-family: "SourceSansPro", Seravek, "Myriad Pro", sans-serif;
+  adobe-hyphenate: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -epub-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-limit-before: 2;
+  -webkit-hyphenate-limit-after: 2;
+  -webkit-hyphenate-limit-lines: 2;
+  text-align: justify;
+  line-height: 1.5;
+  widows: 2;
+  orphans: 2;		
+}
+
+.titlepage {
+  margin: 0;
+}
+
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4, h5, h6, blockquote p cite, dt, pre, address, table, caption, th, td, .caption, figcaption {
+  adobe-hyphenate: none;
+  -ms-hyphens: none;
+  -moz-hyphens: none;
+  -webkit-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+
+h1, h2, h3, h4, h5, h6, dt, hr {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+
+/* HEADINGS */
+
+h1 {
+  font-family: "SourceSerifPro", Athelas, "Minion Pro", serif;
+  font-size: 1.4375em;
+  line-height: 1.04347826;
+  margin-top: 1.04347826em;
+  margin-bottom: 2.08695652em;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "SourceSerifPro", Athelas, "Minion Pro", serif;
+  font-size: 1.3125em;
+  line-height: 1.14285714;
+  margin-top: 2.28571429em;
+  margin-bottom: 1.14285714em;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "SourceSerifPro", Athelas, "Minion Pro", serif;
+  font-size: 1.125em;
+  line-height: 1.33333333;
+  margin-top: 1.33333333em;
+  margin-bottom: 0;
+}
+
+
+/* BLOCK ELEMENTS */
+
+p {
+  text-indent: 5%;
+}
+
+h1+p, h2+p, h3+p,
+.dropcap {
+  text-indent: 0;
+}
+
+ul,ol {
+  margin: 1.5em 0;
+  padding-left: 5%;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+blockquote {
+  margin: 1.5em 5%;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+blockquote p {
+  text-indent: 0;
+}
+
+blockquote p cite {
+  display: block;
+  text-align: right;
+  margin-right: 5%;
+  font-style: normal;
+}
+
+hr.asterism {
+  width: auto;
+  border: none;
+  margin: 1.5em 0;
+  height: 1.5em;
+  text-indent: 0;
+  text-align: center;
+  background: transparent url("../Images/asterism.svg") no-repeat center;
+  background-size: 2.5em 1.25em;
+  overflow: hidden;
+  opacity: 0.7;
+}
+
+table {
+  display: table;
+  table-layout: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  min-width: 70%;
+  max-width: 100%;
+  margin: 1.5em auto;
+  font-feature-settings: "tnum" 1;
+  font-variant-numeric: tabular-nums;
+}
+
+caption {
+  caption-side: top;
+  text-align: center;
+  font-weight: bold;
+}
+
+th {
+  empty-cells: show;
+  border-bottom: 0.125em solid currentColor;
+  padding: 0.6875em 2% 0.6875em 0;
+  text-align: right;
+  font-weight: bold;
+}
+
+td {
+  empty-cells: show;
+  border-bottom: 0.0625em solid currentColor;
+  padding: 0.75em 2% 0.6875em 0;
+  text-align: right;
+}
+
+th {
+  padding: 0.6875em 2.5% 0.6875em 0;
+  border-bottom: 0.125em solid currentColor;
+}
+
+td {
+  padding: 0.75em 2.5% 0.6875em 0;
+  border-bottom: 0.0625em solid currentColor;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+/* MICROTYPOGRAPHY */
+
+i, em, cite {
+  font-style: italic;
+}
+
+blockquote i, blockquote em, blockquote cite,
+i i, i em, i cite, 
+em i, em em, em cite, 
+cite i, cite em, cite cite {
+  font-style: normal;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 0.8125em;
+}
+
+sub {
+  font-size: 75%;
+  line-height: 1.2;
+  vertical-align: sub;
+  vertical-align: -20%;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 1.2;
+  vertical-align: super;
+  vertical-align: 33%;
+}
+
+mark.mark {
+  background: none;
+  color: inherit;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+
+/* FIGURES + IMAGES  */
+
+figure {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+figcaption,
+.caption {
+  font-size: 0.9375em;
+  line-height: 1.6;
+  text-indent: 0;
+  font-style: italic;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.portrait {
+  width: auto;
+  height: 99%;
+  margin: 0;
+}
+
+.portrait img {
+  height: 90%;
+  min-height: 60%;
+  max-height: 1973px;
+}
+
+.float-right {
+  float: right;
+  margin: 0 0 0 0.25em;
+  width: 30%;
+}
+
+.float-left img,
+.float-right img {
+  width: 100%;
+}
+
+.float-dauwhe {
+}
+
+.flex-dauwhe {
+}
+
+.flex33 .item {
+  width: 33%;
+  float: left;
+  font-size: 0;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Vertical align */
+
+.wrap h1 {
+  font-size: 2em;
+  margin: 15% 0 0 2.5%;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.wrap p {
+  font-family: "SourceSerifPro", Athelas, "Minion Pro", serif;
+  text-indent: 0;
+  text-align: left;
+  margin-left: 2.5%;
+}
+
+.wrap .pub {
+  margin-top: 40%;
+}

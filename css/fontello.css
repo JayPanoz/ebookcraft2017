@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../lib/font/fontello.eot?81272599');
+  src: url('../lib/font/fontello.eot?81272599#iefix') format('embedded-opentype'),
+       url('../lib/font/fontello.woff2?81272599') format('woff2'),
+       url('../lib/font/fontello.woff?81272599') format('woff'),
+       url('../lib/font/fontello.ttf?81272599') format('truetype'),
+       url('../lib/font/fontello.svg?81272599#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .65em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  opacity: 0.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-globe:before { content: '\e800'; }
+.icon-picture:before { content: '\e801'; }
+.icon-twitter:before { content: '\f099'; }
+.icon-github-circled:before { content: '\f09b'; }
+.icon-doc-text-inv:before { content: '\f15c'; }
