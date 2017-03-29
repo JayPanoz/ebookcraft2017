@@ -941,6 +941,37 @@ div[*|type = "subchapter"] > div {
 					</section>
 
 					<section>
+						<h4>Funky transforms</h4>
+					</section>
+
+					<section>
+						<figure>
+						<img alt="You can use transforms for grunge things, and it even works in Kindle if you prefix transform!" src="img/transforms.png" />
+						</figure>
+					</section>
+					
+					<section data-background="#3f3f3f">
+						<pre class="css"><code>@supports (transform: rotate(1deg) translateX(-1%)) {
+  .journal-titre .rotate-1 {
+    display: block;
+    transform: rotate(-1deg);
+  }
+  .journal-titre .rotate-2 {
+    display: block;
+    transform: rotate(1deg);
+  }
+  .journal-titre .rotate-3 {
+    display: block;
+    transform: rotate(-1deg) translateX(-2%);
+  }
+  .journal-titre .rotate-4 {
+    display: block;
+    transform: rotate(-3deg) translateY(-0.2em);
+  }
+}</code></pre>
+					</section>
+
+					<section>
 						<h4>Open Type Features</h4>
 					</section>
 
